@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ static_url('main.css') }}">
+    <title>Rostelecom!</title>
+</head>
+<body>
+    <nav>
+        <span>РОСТЕЛЕКОМ - ФОРМА ОБРАЩЕНИЙ</span> 
+        <ul>
+            <li><a href="/">Главная страница</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="logo"><img src="{{ static_url('logo.png') }}"></div>
+
+        <div class="description">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Laboriosam laudantium fugiat sunt praesentium. 
+            Adipisci ducimus nihil ratione optio veritatis corrupti earum dolorum, 
+            quasi accusamus assumenda, maxime numquam maiores vitae quis? 
+            Quod eveniet, quo tempora placeat eius cupiditate sit corporis aspernatur 
+            consequatur alias iste dicta ullam veritatis, consequuntur neque exercitationem amet.
+            Adipisci ducimus nihil ratione optio veritatis corrupti earum dolorum, 
+            quasi accusamus assumenda, maxime numquam maiores vitae quis? 
+            Quod eveniet, quo tempora placeat eius cupiditate sit corporis aspernatur 
+            consequatur alias iste dicta ullam veritatis, consequuntur neque exercitationem amet.
+            Adipisci ducimus nihil ratione optio veritatis corrupti earum dolorum, 
+            quasi accusamus assumenda, maxime numquam maiores vitae quis? 
+            Quod eveniet, quo tempora placeat eius cupiditate sit corporis aspernatur 
+            consequatur alias iste dicta ullam veritatis, consequuntur neque exercitationem amet.
+            Adipisci ducimus nihil ratione optio veritatis corrupti earum dolorum, 
+            quasi accusamus assumenda, maxime numquam maiores vitae quis? 
+            Quod eveniet, quo tempora placeat eius cupiditate sit corporis aspernatur 
+            consequatur alias iste dicta ullam veritatis, consequuntur neque exercitationem amet.
+        </p>
+        </div>
+        <div class="form-field">
+            <form method="post" action="">
+                <fieldset>
+                    <legend>Форма обращения</legend>
+                    <label for="lname">Фамилия: </label>
+                    <input 
+                        required 
+                        type="text" 
+                        id="lname" 
+                        name="lname" 
+                        placeholder="Иванов"><br>
+                    <label for="fname">Имя: </label>
+                    <input 
+                        required 
+                        type="text" 
+                        id="fname" 
+                        name="fname" 
+                        placeholder="Иван"><br>
+                    <label for="mname">Отчество: </label>
+                    <input 
+                        type="text" 
+                        id="mname" 
+                        name="mname" 
+                        placeholder="Иванович"><br>
+                    <label for="phone">Телефон: </label>
+                    <input 
+                        required 
+                        type="text" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="+7 (985) 123-45-67"><br>
+                    <label for="message">Обращение: </label><br>
+                    <textarea 
+                        required
+                        id="message" 
+                        name="message" 
+                        placeholder="Здесь напишите текст обращения..."
+                        rows="10"></textarea>
+                    <input class="btn" type="submit" value="Отправить">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Продолжая использовать наш сайт, вы даете согласие на обработку файлов Cookies и других пользовательских данных, в соответствии с Политикой конфиденциальности и Пользовательским соглашением
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange: #ff4f12;
+    --purple: #70f;
+    --font: #101828;
+    --bg: #fff;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--font);
+    font-family: RT Fonts, Arial, Helvetica Neue, Helvetica,sans-serif;
+    line-height: 1.5;
+    word-break: break-word;
+    text-align: justify;
+    text-justify: inter-word;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 100vh;
+}
+
+nav {
+    background-color: var(--font);
+    color: var(--bg);
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-between;
+    min-height: 2rem;
+    padding: 2rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: var(--bg);
+}
+
+a {
+    text-decoration: none;
+    padding-block: 2rem;
+}
+
+a:hover {
+    border-bottom: 5px solid var(--orange);
+}
+
+
+main {
+    grid-column: 2/4;
+    min-height: max-content;
+    margin-block: 2rem;
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+div.description {
+    margin-bottom: 2rem;
+}
+
+div.form-field {
+    display: grid;
+    grid-column: 2/4;
+}
+
+fieldset {
+    padding: 1rem;
+    font-weight: bold;
+}
+
+label {
+    display: inline;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: .5rem;
+    margin-block: .5rem;
+}
+textarea {
+    width: 100%;
+    padding: .5rem;
+}
+
+.btn {
+    background-color: var(--orange);
+    color: var(--bg);
+    font-size: inherit;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 3rem;
+}
+
+.btn:hover {
+    background-color: var(--purple);
+    animation: btn-color .3s linear forwards;
+}
+
+@keyframes btn-color {
+    0% {
+        background-color: var(--orange);
+    }
+    100% {
+        background-color: var(--purple);
+    }
+}
+
+footer {
+    background-color: var(--font);
+    color: var(--bg);
+    grid-column: span 4;
+    padding: 2rem;
+    min-height: 2rem;
+}
